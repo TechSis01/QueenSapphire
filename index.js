@@ -8,6 +8,13 @@ burgerBtn.addEventListener('click',function(){
     heroSection.classList.toggle('image')
 })
 
+let totalCart = document.querySelector('.total-cart')
+let cartIcon = document.querySelector('.cart-icon')
+cartIcon.addEventListener('click',function(){
+    totalCart.classList.toggle('show-cart')
+})
+
+
 //Carousel slide code
 const slides = document.querySelector('#slides')
 const items = document.querySelectorAll('.item')

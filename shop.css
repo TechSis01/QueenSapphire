@@ -9,10 +9,10 @@ html{
 
 }
 body{
+    overflow-x: hidden;
     font-size:1.6rem;
    background-color: #f0ead2;
    font-family: 'Noto Sans', sans-serif;
-  
 }
 
 /*NAVIGATION BAR========================================*/
@@ -59,9 +59,12 @@ nav{
 }
 .cart-link{
     position:relative;
+    cursor:pointer;
 }
 .cart-item-number{
-    position:absolute;
+    font-weight:bold;
+    position:relative;
+    bottom:5px;
     font-size:1.1rem;
     color:#cd9777;
     font-weight:700;
@@ -236,7 +239,7 @@ nav{
 }
 .minus,.qty,.plus{
     margin-right:70%;
-    color:#cd9777;
+    color:white;
     cursor:pointer;
 }
 .remove-btn{
@@ -250,6 +253,53 @@ nav{
 }
 .remove-btn:hover{
     background-color: #e6b8a2;
+}
+.total-cart button{
+    padding:1% 2%;
+    background-color:#cd9777;
+    color:white;
+    border-radius: 5px;
+    outline:none;
+    border:none;
+    cursor:pointer;
+    margin-top:5%;
+}
+.total-cart{
+    width:100%;
+    position:absolute;
+    top:50px;
+    transition:all 0.5s linear;
+    /*transform:translateX(1370px);*/
+    transition:transform 0.5s ease-in;
+    background-color: #582f0e;
+    color:white;
+    padding:2% 4%;
+    height:100%;
+    z-index:6;
+    display:none;
+    animation: fadeout .6s;
+    height:auto;
+}
+#checkout-btn{
+    text-decoration: none;
+    padding:1% 1%;
+    background-color: #cd9777;
+    border-radius: 10px;
+    color:white;
+    
+}
+@keyframes fadeout{
+        0% { opacity: 0; }
+        100% { opacity: 1; }
+}
+.Gtotal{
+    margin-top:3%;
+    font-weight:bold;
+    margin-bottom:2%;
+}
+#close{
+   margin-left:85%;
+   cursor:pointer;
 }
 /*==========================MEDIA QUERIES====================*/
 @media only screen and (max-width: 480px) and (min-width: 320px){
@@ -316,6 +366,23 @@ nav{
      .items{
         padding-right:3%;
      }
+     .total-cart{
+        height:auto;
+        top:60px;
+    }
+     .individual-cart-item{
+      width:90%;
+      margin-top:4%;
+    }
+    .remove-btn{
+        margin-left:10%;
+    }
+    .total-price{
+        margin-left:8%;
+    }
+    .qty-changer{
+        width:40%;
+    }
     #contact{
         grid-template-columns: 1fr;
         padding:10% 0; 
@@ -334,6 +401,7 @@ nav{
         grid-template-columns:1fr;
         font-size:1.1rem;
     }
+    
 }
 /*========================IPAD SIZES==========================*/
 @media only screen and (max-width: 768px) and (min-width: 481px){
@@ -387,6 +455,23 @@ nav{
      .jewelry-type{
         font-size:0.9rem;
      }
+     .total-cart{
+        height:auto;
+        top:60px;
+    }
+     .individual-cart-item{
+      width:90%;
+      margin-top:4%;
+    }
+    .remove-btn{
+        margin-left:10%;
+    }
+    .total-price{
+        margin-left:8%;
+    }
+    .qty-changer{
+        width:40%;
+    }
      .item-details h5{
         font-size:1.2rem;
         margin:6% 0;
@@ -414,6 +499,9 @@ nav{
         display:grid;
         grid-template-columns:1fr 1fr;
         font-size:1.5rem;
+    }
+    .total-cart{
+        top:60px;
     }
 }
 
@@ -459,6 +547,23 @@ nav{
      .items{
         padding-right:3%;
      }
+     .total-cart{
+        height:auto;
+        top:60px;
+    }
+     .individual-cart-item{
+      width:90%;
+      margin-top:4%;
+    }
+    .remove-btn{
+        margin-left:10%;
+    }
+    .total-price{
+        margin-left:8%;
+    }
+    .qty-changer{
+        width:40%;
+    }
     
     #contact div{
         display:flex;
@@ -492,3 +597,14 @@ nav{
     transform : translateY(360%);
     transition:transform 0.5s ease-in;
 }
+.show-cart{
+    display:block;
+    animation: fadeIn .6s;
+    transition:all 0.5s linear;
+}
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+

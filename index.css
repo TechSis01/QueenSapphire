@@ -63,6 +63,14 @@ nav{
     background-color: black;
     margin:3px;
 }
+.cart-item-number{
+    font-weight:bold;
+    position:relative;
+    bottom:5px;
+    font-size:1.1rem;
+    color:#cd9777;
+    font-weight:700;
+}
 
 /*====================================HERO SECTION===========================================*/
 #hero{ 
@@ -523,6 +531,35 @@ span{
     color:#cd9777;
 }
 
+
+/*=========carrt*===================*/
+.total-cart{
+    width:100%;
+    position:absolute;
+    top:40px;
+    /*transform:translateX(1370px);*/
+    transition:transform 0.5s ease-in;
+    background-color: #582f0e;
+    color:white;
+    padding:2% 4%;
+    height:100%;
+    z-index:6;
+    display:none;
+    animation: fadeout .6s;
+}
+#checkout-btn{
+    text-decoration: none;
+    padding:1% 1%;
+    background-color: #cd9777;
+    border-radius: 10px;
+    color:white;
+    
+}
+.Gtotal{
+    margin-top:3%;
+    font-weight:bold;
+    margin-bottom:2%;
+}
 /*==========================MEDIA QUERIES====================*/
 @media only screen and (max-width: 480px) and (min-width: 320px){
     main{
@@ -1068,3 +1105,13 @@ span{
     transform : translateY(20%);
     transition:transform 0.5s ease-in;
 }
+.show-cart{
+    display:block;
+    animation: fadeIn .6s;
+}
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+

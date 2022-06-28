@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--==========================FONT AWESOME LINK-->
+    <script src="https://kit.fontawesome.com/597098b101.js" crossorigin="anonymous"></script>
+    <!--=========================GOOGLE FONTS LINK===========================-->
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Big+Shoulders+Display:wght@700&family=Cookie&family=Dancing+Script:wght@600&family=Gentium+Plus&family=Joan&family=Lexend+Deca:wght@500&family=Noto+Sans:wght@300&family=Open+Sans:wght@400;500&family=Russo+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./checkout.css">
+    <title>Checkout</title>
+</head>
+<body>
+        <!--NAVIGATION SECTION-->
+    
+        <nav>
+            <div class="brand_name">
+                <h4><i class="fa-solid fa-gem"></i>Queen's Sapphire</h4>
+            </div>
+            <ul class="nav-links">
+                <li>
+                    <a href="./index.html"><i class="fa-solid fa-house"></i> Home</a>
+                </li>
+                <li>
+                    <a href="./shop.html"><i class="fa-solid fa-store"></i> Store</a>
+                </li>
+                <li>
+                    <a href=""><i class="fa-solid fa-blog"></i> Blog</a>
+                </li>
+                <li>
+                    <a href="./about.html"><i class="fa-solid fa-address-card"></i> About</a>
+                </li>
+                <li class="cart-icon">
+                    
+                        <i class="fa-solid fa-cart-shopping "></i>
+                
+                    <span class="cart-item-number"></span>
+                </li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+
+
+<!------------------------------BILLING DETAILS------------------------------->
+<h1>Checkout</h1>
+<input type="checkbox" id="checkbox"><span>Never miss an offer! Subscribe to our Newsletter</span><br>
+<section id="billing-details">
+   
+    <div class="form-1">
+    <label for="firstName">First name</label>
+   <p>
+        <input type="text" id="firstName" class="general-input">
+        <span id = "nameError" class="errors"></span>
+    </p>
+    <label for="lastname">Last name</label>
+    <p>
+          <input type="text" id="lastname"  class="general-input">
+          <span id = "lastnameError" class="errors"></span>
+     </p>
+     <label for="country">Country/Region</label>
+     <p>
+           <input type="text" id="country"   class="general-input">
+           <span id = "countryError" class="errors"></span>
+      </p>
+      <label for="address">Street address</label>
+      <p>
+        <input type="text" id="address"  class="general-input">
+        <span id = "streetError" class="errors"></span>
+       </p>
+    </div>
+
+    <div class="form-2">
+       <label for="town">Town/City</label>
+       <p>
+             <input type="text" id="town"  class="general-input">
+             <span id = "townError" class="errors"></span>
+        </p>
+        <p>State</p>
+        <select>
+            <option>Select an option...</option>
+            <option>Abia</option>
+            <option>Adamawa</option>
+            <option>Akwa Ibom</option>
+            <option>Anambra</option>
+            <option>Bauchi</option>
+            <option>Bayelsa</option>
+            <option>Benue</option>
+            <option>Borno</option>
+            <option>Cross River</option>
+            <option>Delta</option>
+            <option>Ebonyi</option>
+            <option>Edo</option>
+            <option>Ekiti</option>
+            <option>Enugu</option>
+            <option>Gombe</option>
+            <option>Imo</option>
+            <option>Jigawa</option>
+            <option>Kaduna</option>
+            <option>Kano</option>
+            <option>Katsina</option>
+            <option>Kebbi</option>
+            <option>Kogi</option>
+            <option>Kwara</option>
+            <option>Lagos</option>
+            <option>Nasarawa</option>
+            <option>Niger</option>
+            <option>Ogun</option>
+            <option>Ondo</option>
+            <option>Osun</option>
+            <option>Oyo</option>
+            <option>Plateau</option>
+            <option>Rivers</option>
+            <option>Sokoto</option>
+            <option>Taraba</option>
+            <option>Yobe</option>
+            <option>Zamfara</option>
+        </select><br>
+        <label for="phone">Phone Number</label>
+        <p>
+              <input type="text" id="phone"  class="general-input">
+              <span id = "phoneError" class="errors"></span>
+         </p>
+         <label for="email">Email address</label>
+         <p>
+               <input type="email" id="email"  class="general-input">
+               <span id = "emailError" class="errors"></span>
+          </p>
+          <button id="place-order">Place Order</button>
+         </div>
+    
+</section>
+
+<div class="modal-container">
+    <div class="modal-content">
+        <span id="x">X</span>
+        <img src="./Images/mastercard (1).png"  alt="master-card" id="mastercard">
+        <img src="./Images/visacard.png" alt="visa-card" id="visacard">
+        <form>
+        <label for="card-num" class="modal-label">Card Number</label>
+          <p>
+                <input type="text" id="card-num" class="bank-deets" >
+                <span id="card-error" class="modal-error">error</span>
+           </p>
+           <label for="cvv"  class="modal-label">Cvv</label>
+           <p>
+                 <input type="password" id="cvv" class="bank-deets">
+                 <span id="cvv-error" class="modal-error">error</span>
+            </p>
+            <label for="expiry-date"  class="modal-label">Exp</label>
+            <p>
+                  <input type="text" id="expiry-date" class="bank-deets" placeholder="mm/yyyy" >
+                  <span id="expiry-error" class="modal-error">error</span>
+             </p>
+             <label for="pin"  class="modal-label">Pin</label>
+             <p>
+                   <input type="password" id="pin" class="bank-deets" >
+                   <span id="pin-error" class="modal-error">error</span>
+              </p>
+            <button id="payment-btn">Pay Here</button>
+            </form>
+    </div>
+</div>
+<!----------------------------CONTACT SECTION-------------------------------->
+<!---------------CONTACT SECTION======================================-->
+<section id="contact">
+    <div class="payment-type">
+        <p ><em>Paypal</em></p>
+        <p>VISA</p>
+        <p>mastercard</p>
+    </div>
+    <div>
+        <h3><i class="fa-solid fa-gem"></i>QUEEN'S SAPPHIRE</h3>
+    </div>
+    <div class="socials">
+        <p>FOLLOW US  <a href="https://www.linkedin.com/in/queendoline-akpan/"><i class="fa-brands fa-facebook-f"></i></a>  <a href="https://twitter.com/QueenAkpan_"><i class="fa-brands fa-twitter"></i></a>  <a href="https://twitter.com/QueenAkpan_"><i class="fa-brands fa-instagram"></i></a></p>
+    </div>
+</section>
+    <!-----------------------------FOOTER----------------------------------------------------->
+    <section id="footer">
+        <div class="footer-sections">
+            <div>
+                <h3>CATEGORIES</h3>
+                <p>Bridal Jewelry</p>
+                <p>Rings</p>
+                <p>Women</p>
+                <p>Man</p>
+                <p>Children</p>
+                <p>Watches</p>
+            </div>
+            <div>
+                <h3>SERVICES</h3>
+                <p>Jewelry Repair</p>
+                <p>Watch Repair</p>
+                <p>Custom jewelry</p>
+                <p>Sel or Pawn your jewelry</p>
+                <p>Ear piercing</p>
+                <p>Jewelry Warranty</p>
+            </div>
+            <div>
+                <h3>APPLY FOR CREDIT</h3>
+                <p>Credit Request Form </p>
+                <p>Acima</p>
+                <p>Symchrony</p>
+            </div>
+            <div>
+                <h3>CONTACT US</h3>
+                <p>Location</p>
+                <p>Contact form</p>
+                <p>Support</p>
+                <p>FAQ</p>
+                <p>Blog</p>
+            </div>
+            <div>
+                <h3>24H LINE</h3>
+                <p class="times-available">We are at your disposal 24h</p>  
+                <p><span id="phone-number">080 746 8726 </span><i class="fa-solid fa-headphones-simple"></i></p>     
+             </div>
+             </div>
+             <div class="terms">
+                <p>Terms and Conditions </p>
+                <p>Privacy Policy</p>
+                <p>Cookies</p>
+             </div>
+             <p id="copy">Copyright <i class="fa-solid fa-copyright"></i> by <strong>Queen's Sapphire Jewelries</strong>. All Rights Reserved</p>
+        </section>
+
+
+        <script src=./checkout.js></script>
+</body>
+</html>
