@@ -106,7 +106,7 @@ sr.reveal(
 );
 sr.reveal(
     ".perusian-jewelry,  #contact, .about, .products, .full-carousel-container, #best-sellers,.new-products, main-discount-container, .watches,.giveaway-box, ", {
-        delay: 400,
+        delay: 700,
     }
 );
 sr.reveal(".full-carousel-container, .main-discount-container, .giveaway-box", { interval: 500 });
