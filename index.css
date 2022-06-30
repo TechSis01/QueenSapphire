@@ -579,7 +579,6 @@ span{
        width:100%;
         justify-content: space-between;
         z-index: 1;
-        
     }
     .nav-links{
         position:absolute;
@@ -624,7 +623,7 @@ span{
         font-size: 4.5rem;
     }
     .perusian-jewelry{
-        margin-top:60%;
+        margin-top:30%;
         
     }
     #discount{
