@@ -247,12 +247,14 @@ margin:10px 0;
 }
 .new-products a{
     text-decoration: none;
-    margin:0 25%;
+    margin:0 0%;
     color:black;
     font-weight:700;
     letter-spacing: 3px;
-    word-spacing: 2px;;
+    word-spacing: 2px;
+    padding-left:5%;
 }
+
 .new-products a:hover{
     color:#8a5a44;
 }
@@ -570,7 +572,7 @@ span{
        width:100%;
         justify-content: space-between;
         z-index: 1;
-        height:
+        
     }
     .nav-links{
         position:absolute;
@@ -631,7 +633,7 @@ span{
         margin:0 auto;
     }
     .input-field{
-        width:80%;
+        width:90%;
         border-radius:30px;
         margin:5% auto;
         
@@ -641,6 +643,9 @@ span{
         margin-top:10px;
         outline:none;
         border:none;
+    }
+    .link{
+        margin-left:5%;
     }
     .full-carousel-container{
         padding:0 5%;
@@ -654,6 +659,10 @@ span{
         display:grid;
         grid-template-columns: repeat(2,1fr);
         padding:4% 5% 3% 2%;
+    }
+    .watch{
+        padding-left:5%;
+        margin-bottom:15%;
     }
    .watches img{
     width:100px;
@@ -924,23 +933,7 @@ span{
         align-items: center;
         padding:4% 3%;
     }
-   /*.nav-links{
-        position:absolute;
-        right:0;
-        top:200%;
-        flex-direction: column;
-        align-items: center;
-        width:100%;
-        height:50vh;
-        transform:translateY(-110%);
-        transition:transform 0.5s ease-in;
-        z-index: 5;
-    }*/
-    /*.burger{
-        position:relative;
-        z-index:9;
-        display:unset;
-    }*/
+
     .burger:hover{
         cursor:pointer;
     }

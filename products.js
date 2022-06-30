@@ -4,7 +4,7 @@ const products = [
         title:"Earring",
         price:70,
         Description:'18karate diamond Earrings',
-        imagesrc:'./images/earring10.png',
+        imagesrc:'./images/earring11.png',
         
     },
     {
@@ -19,7 +19,7 @@ const products = [
         title:"Earring",
         price:70,
         Description:'18karate diamond Earrings',
-        imagesrc:'./images/earring10.png',
+        imagesrc:'./images/earring8.png',
     },
     {
         id:3,
