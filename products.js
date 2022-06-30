@@ -4,7 +4,7 @@ const products = [
         title:"Earring",
         price:70,
         Description:'18karate diamond Earrings',
-        imagesrc:'./images/earring11.png',
+        imagesrc:'C:\Users\USER\Documents\QueenSapphire\Images\Drina_Vintage_Luxury_Necklace_Set___80_Carat___Cubic_Zirconia__-_Beloved_Sparkles__1_-removebg-preview.png',
     },
     {
         id:1,
