@@ -86,7 +86,6 @@ h1{
 .About-container p{
     line-height:1.5;
     padding-right:5%;
-    
 }
 .About-container img{
     width:400px;
@@ -101,6 +100,33 @@ h1{
     align-self:center;
     min-height:100px;
 }
+.img-1:hover{
+    animation: shake 0.5s;
+  
+    /* When the animation is finished, start again */
+    animation-iteration-count: infinite;
+}
+.img-2:hover {
+    /* Start the shake animation and make the animation last for 0.5 seconds */
+    animation: shake 0.5s;
+  
+    /* When the animation is finished, start again */
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
 
 /*============================CONTACT SECTION===========================================*/
 #contact{
@@ -199,13 +225,229 @@ h1{
     background-color: #cd9777;
     border-radius: 10px;
     color:white;
-    
+}
+
+/*==========================MEDIA QUERIES====================*/
+@media only screen and (max-width: 480px) and (min-width: 320px){
+    main{
+        overflow-x: hidden;
+        transition:transform 0.5s ease-in;
+    }
+    nav{
+       width:100%;
+        justify-content: space-between;
+        z-index: 1;
+        height:
+    }
+    .nav-links{
+        position:absolute;
+        right:0;
+        top:200%;
+        flex-direction: column;
+        align-items: center;
+        width:100%;
+        height:50vh;
+        transform:translateY(-130%);
+        transition:transform 0.5s ease-in;
+        z-index: 5;
+    }
+    .burger{
+        position:relative;
+        z-index:9;
+        display:unset;
+    }
+    .burger:hover{
+        cursor:pointer;
+    }
+    h1{
+        padding-top:10%;
+        font-size:3.0rem;
+    }
+    .About-container{
+        flex-direction:column-reverse;
+        padding-bottom:5%;
+    }
+    .About-container img{
+        margin-bottom:3%;
+        width:290px;
+    }
+    .About-container div{
+        font-size:1.3rem;
+        line-height: 2;
+    }
+    #contact{
+        grid-template-columns: 1fr;
+        padding:10% 0; 
+    }
+    #contact div{
+        display:flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top:7%;
+    }    
+    #contact h3{
+       display:none;
+    }
+    .footer-sections{
+        display:grid;
+        grid-template-columns:1fr;
+    }
+}
+
+/*========================IPAD SIZES==========================================*/
+@media only screen and (max-width: 768px) and (min-width: 481px){
+    main{
+        overflow-x: hidden;
+        transition:transform 0.5s ease-in;
+    }
+    nav{
+       width:100%;
+        justify-content: space-between;
+        z-index: 1;
+        height:
+    }
+    .nav-links{
+        position:absolute;
+        right:0;
+        top:200%;
+        flex-direction: column;
+        align-items: center;
+        width:100%;
+        height:50vh;
+        transform:translateY(-130%);
+        transition:transform 0.5s ease-in;
+        z-index: 5;
+    }
+    .burger{
+        position:relative;
+        z-index:9;
+        display:unset;
+    }
+    .burger:hover{
+        cursor:pointer;
+    }
+    h1{
+        padding-top:10%;
+        font-size:4.0rem;
+    }
+    .About-container{
+        flex-direction:column-reverse;
+        padding-bottom:5%;
+    }
+    .About-container img{
+        margin-bottom:3%;
+        width:80%;
+    }
+    .About-container div{
+        font-size:1.5rem;
+        line-height: 2;
+    }
+    #contact{
+        grid-template-columns: 1fr ;
+        padding:2% 0; 
+    }
+    #contact div{
+        display:flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top:7%;
+    }    
+    #contact h3{
+       display:none;
+    }
+    .footer-sections{
+        display:grid;
+        grid-template-columns:1fr 1fr;
+    }
+}
+
+/*=============================LARGER SCREEN SIZES=========================*/
+@media only screen and (max-width: 1024px) and (min-width: 769px){
+    main{
+        overflow-x: hidden;
+        transition:transform 0.5s ease-in;
+    }
+    nav{
+       width:100%;
+        justify-content: space-between;
+        z-index: 1;
+        height:
+    }
+    .nav-links{
+        position:absolute;
+        right:0;
+        top:200%;
+        flex-direction: column;
+        align-items: center;
+        width:100%;
+        height:50vh;
+        transform:translateY(-130%);
+        transition:transform 0.5s ease-in;
+        z-index: 5;
+    }
+    .burger{
+        position:relative;
+        z-index:9;
+        display:unset;
+    }
+    .burger:hover{
+        cursor:pointer;
+    }
+    h1{
+        padding-top:10%;
+        font-size:4.0rem;
+    }
+    .About-container{
+        flex-direction:column-reverse;
+        padding-bottom:5%;
+    }
+    .About-container img{
+        margin-bottom:3%;
+        width:80%;
+    }
+    .About-container div{
+        font-size:1.6rem;
+        line-height: 2;
+    }
+    #contact{
+        grid-template-columns: 1fr 1fr 1fr;
+        padding:2% 0; 
+    }
+    #contact div{
+        display:flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top:7%;
+    }    
+    #contact h3{
+       display:none;
+    }
+    .footer-sections div{
+        margin-bottom: 10%;
+    }
+    .footer-sections{
+        display:grid;
+        grid-template-columns:1fr 1fr 1fr;
+    }
+}
+.come{
+    transform : translateY(0%);
+    transition:transform 0.5s ease-in;
+}
+.drop{
+    max-height:170px;
+    padding-bottom:10%;
+}
+.image{
+    transform : translateY(25%);
+    transition:transform 0.5s ease-in;
 }
 .Gtotal{
     margin-top:3%;
     font-weight:bold;
     margin-bottom:2%;
 }
+
 .show-cart{
     display:block;
     animation: fadeIn .6s;
@@ -214,5 +456,7 @@ h1{
     0% { opacity: 0; }
     100% { opacity: 1; }
   }
-
+.burger-turn{
+    transform: rotateY(180deg);
+}
 

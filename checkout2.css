@@ -227,7 +227,24 @@ option{
     margin:15% auto;
     position:relative;
     padding-bottom:2%;
-    border-radius: 29px;;
+    border-radius: 29px;
+
+}
+#preloader{
+    background: #f0ead2 url(./Images/Bubble-Preloader-1-1.gif) no-repeat center;
+    background-size: 10%;
+    opacity:0.9;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+.new-modal-container p{
+    text-align: center;
+}
+.new-modal-content img{
+  margin:0 30%;
+    width:50%;
 }
 /*============================CONTACT SECTION===========================================*/
 #contact{
@@ -439,6 +456,17 @@ option{
     .foot p{
         line-height:2;
     }
+    .new-modal-content{
+        margin-top:40%;
+        width:80%;
+        line-height: 2;
+        padding:0 auto;
+
+    }
+    .new-modal-content img{
+        width:50%;
+        margin-left:0 auto;
+    }
 }
 
 /*========================IPAD SIZES==========================================*/
@@ -576,6 +604,16 @@ option{
     .foot p{
         line-height:2;
     }
+    .new-modal-content{
+        margin-top:40%;
+        width:80%;
+        line-height: 2;
+        padding:0 auto;
+    }
+    .new-modal-content img{
+        width:50%;
+        margin-left:0 auto;
+    }
 }
 /*=============================LARGER SCREEN SIZES=========================*/
 @media only screen and (max-width: 1024px) and (min-width: 769px){
@@ -711,5 +749,18 @@ option{
     }
     .foot p{
         line-height:2;
+    }
+    .new-modal-content img{
+        width:200px;
+    }
+    .new-modal-content{
+        margin-top:17%;
+        width:80%;
+        line-height: 2;
+        padding:0 auto;
+    }
+    .new-modal-content img{
+        width:50%;
+        margin-left:0 auto;
     }
 }

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <!--==========================FONT AWESOME LINK-->
      <script src="https://kit.fontawesome.com/597098b101.js" crossorigin="anonymous"></script>
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
      <!--=========================GOOGLE FONTS LINK===========================-->
      <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Big+Shoulders+Display:wght@700&family=Cookie&family=Dancing+Script:wght@600&family=Gentium+Plus&family=Joan&family=Lexend+Deca:wght@500&family=Noto+Sans:wght@300&family=Open+Sans:wght@400;500&family=Russo+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./about.css">
@@ -26,16 +27,7 @@
                 <a href="./shop.html"><i class="fa-solid fa-store"></i> Store</a>
             </li>
             <li>
-                <a href=""><i class="fa-solid fa-blog"></i> Blog</a>
-            </li>
-            <li>
                 <a href="./about.html"><i class="fa-solid fa-address-card"></i> About</a>
-            </li>
-            <li class="cart-icon">
-                
-                    <i class="fa-solid fa-cart-shopping "></i>
-            
-                <span class="cart-item-number"></span>
             </li>
         </ul>
         <div class="burger">
@@ -45,21 +37,22 @@
         </div>
     </nav>
 <!------------------------------------ABOUT SECTION THE CEO---------------------->
-<h1>About Us</h1>
+<main>
+<h1 data-aos="fade-right">About Us</h1>
 
 <div class="About-container">
-    <div >
+    <div data-aos="fade-right">
         <p>Queen's Sapphire is a luxury and premium jewelry brand and we pride ourselves in creating a wide variety of unique and superior jewelry which include wedding and engagement rings,jewelry sets, watches and more while providing excellent customer service.</p><br>
         <p>We have a very high standard in the jewelry shopping experience with exceptional quality at affordable prices, from ready made to customized designs for you filled with true and sentimental value.</p><br>
         <p>Natural diamonds,high quality simulants ,solid gold, sterling silver jewelry?We have you covered! Our designs are made from the finest and purest metals and gemstones.</p><br>
         <p>If you are looking to propose or engage the love of your life, getting married or renewing your vows, marking an anniversary or just looking for the perfect gift for you or loved ones the choose Queen's Sapphire.</p>  
   </div>
-    <img src="./Images/model4.png" class="img-1">
-    <img src="./Images/model5.png" class="img-2">
+    <img src="./Images/model4.png" class="img-1" data-aos="fade-left">
+    <img src="./Images/model5.png" class="img-2" data-aos="fade-left">
 </div>
 
  <!---------------CONTACT SECTION======================================-->
- <section id="contact">
+ <section id="contact" data-aos="zoom-in-up">
     <div class="payment-type">
         <p ><em>Paypal</em></p>
         <p>VISA</p>
@@ -73,7 +66,7 @@
     </div>
 </section>
     <!-----------------------------FOOTER----------------------------------------------------->
-    <section id="footer">
+    <section id="footer" data-aos="zoom-in-up">
         <div class="footer-sections">
             <div>
                 <h3>CATEGORIES</h3>
@@ -130,6 +123,15 @@
         <p class="Gtotal">Grand Total : $0</p>
         <a href="./Checkout.html" id="checkout-btn">Checkout</a>
         </section>
-    <script src="./shop.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init({
+  duration: 2000,
+})
+
+          </script>
+    <script src="./about.js"></script>
+
+    </main>
 </body>
 </html>

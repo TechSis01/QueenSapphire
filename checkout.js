@@ -22,6 +22,7 @@ function openModal(){
         }
         else{
             modalContainer.style.display = 'block'
+            errorMessage.innerHTML = ""
         }
     }
 }
@@ -174,7 +175,7 @@ email.addEventListener('keyup',function(){
     }
 })
 
-//expiry date validation
+//Card number validation
 let cardError = document.querySelector('#card-error')
 let cardNumber = document.querySelector('#card-num')
 cardNumber.addEventListener('keyup',function(){
@@ -188,12 +189,63 @@ cardNumber.addEventListener('keyup',function(){
         cardError.style.color = 'red'
         return true;
     }
-    else if(cardNumDetails.trim()){
-        cardError.innerHTML = '<i class="fa-solid fa-circle-check"></i>'
-        cardError.style.color = 'green'
-    }
     else{
         cardError.innerHTML = '<i class="fa-solid fa-circle-check"></i>'
         cardError.style.color = 'green'
     }
 })
+//CVV VALIDATION
+let cvvNum = document.querySelector('#cvv')
+let cvvError = document.querySelector('#cvv-error')
+cvvNum.addEventListener('keyup',function(){
+    let cvvNumber = cvvNum.value
+    if(cvvNumber.length === 0){
+        cvvError.innerHTML = 'invalid'
+        cvvError.style.color = 'red'
+        return false;
+    }
+    else if(cvvNumber.length > 3){
+        cvvError.innerHTML = 'invalid'
+        cvvError.style.color = 'red'
+        return false;
+    }
+    else{
+        cvvError.innerHTML = '<i class="fa-solid fa-circle-check"></i>'
+        cvvError.style.color = 'green'
+    }
+})
+
+//EXPIRY DATE VALIDATION
+let expiredCard = document.querySelector('#expiry-date')
+let expiredCardError = document.querySelector('#expiry-error')
+expiredCard.addEventListener('keyup',function(){
+    let expiredCardNum = expiredCard.value
+    if(expiredCardNum.length === 0){
+        expiredCardError.innerHTML = 'invalid'
+        expiredCardError.style.color = 'red'
+        return false;
+    }
+    else{
+        expiredCardError.innerHTML = '<i class="fa-solid fa-circle-check"></i>'
+        expiredCardError.style.color = 'green'
+    }
+})
+
+
+
+//PIN ERROR
+/*let pinNum =  document.querySelector('#pin')
+let pinError = document.querySelector('#pin-error')
+pinNum.addEventListener('click',function(){
+    let pin = pinNum.value
+    if(pin.length == 0){
+        pinError.innerHTML = 'invalid'
+        pinError.style.color = 'red'
+        return false;
+    }
+    else{
+        pinError.innerHTML =  '<i class="fa-solid fa-circle-check"></i>'
+        pinError.style.color = 'green'
+        return true;
+    }
+})*/

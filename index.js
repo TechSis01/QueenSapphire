@@ -8,11 +8,7 @@ burgerBtn.addEventListener('click',function(){
     heroSection.classList.toggle('image')
 })
 
-let totalCart = document.querySelector('.total-cart')
-let cartIcon = document.querySelector('.cart-icon')
-cartIcon.addEventListener('click',function(){
-    totalCart.classList.toggle('show-cart')
-})
+
 
 
 //Carousel slide code
@@ -95,3 +91,28 @@ div1[i].addEventListener('mouseout',function(){
 
 })
 }
+
+/*===== SCROLL REVEAL ANIMATION =====*/
+const sr = ScrollReveal({
+    origin: "top",
+    distance: "130px",
+    duration: 2200,
+    delay: 200,
+    //     reset: true
+});
+
+sr.reveal(
+    "#hero, #best-sellers, #discount, #promotions, #giveaway, #testimonials, #faq, #contact, #footer", {}
+);
+sr.reveal(
+    ".perusian-jewelry,  #contact, .about, .products, .full-carousel-container, #best-sellers,.new-products, main-discount-container, .watches,.giveaway-box, ", {
+        delay: 400,
+    }
+);
+sr.reveal(".full-carousel-container, .main-discount-container, .giveaway-box", { interval: 500 });
+sr.reveal(
+    ".perusian-jewelry, .about, .footer-sections, ",{
+        interval: 500,
+    }
+);
+

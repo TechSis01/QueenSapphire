@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
       <!--==========================FONT AWESOME LINK-->
       <script src="https://kit.fontawesome.com/597098b101.js" crossorigin="anonymous"></script>
       <!--=========================GOOGLE FONTS LINK===========================-->
@@ -24,9 +25,6 @@
                 </li>
                 <li>
                     <a href="./shop.html"><i class="fa-solid fa-store"></i> Store</a>
-                </li>
-                <li>
-                    <a href=""><i class="fa-solid fa-blog"></i> Blog</a>
                 </li>
                 <li>
                     <a href="./about.html"><i class="fa-solid fa-address-card"></i> About</a>
@@ -55,7 +53,7 @@
             </section>
 
             <section id="items">
-             <div class="m">
+             <div class="m" data-aos="zoom-in">
                 <!--This is where I will render all the images-->
                 <!--<div class="item">
                     <img src="./Images/earring10.png" alt="bridalnecklace">
@@ -70,7 +68,7 @@
             </section>
 
               <!---------------CONTACT SECTION======================================-->
-    <section id="contact">
+    <section id="contact"  data-aos="fade-right">
         <div class="payment-type">
             <p ><em>Paypal</em></p>
             <p>VISA</p>
@@ -86,7 +84,7 @@
     
 
     <!-----------------------------FOOTER----------------------------------------------------->
-    <section id="footer">
+    <section id="footer" data-aos="fade-left">
     <div class="footer-sections">
         <div>
             <h3>CATEGORIES</h3>
@@ -145,7 +143,18 @@
         <p class="Gtotal">Grand Total : $0</p>
         <a href="./Checkout.html" id="checkout-btn">Checkout</a>
         </section>
+
+
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+           AOS.init({
+  duration: 2000,
+})
+          </script>
         <script src="./products.js"></script>
-    <script src="./shop.js"></script>
+        <script src="./shop.js"></script>
+      
+       
+ 
 </body>
 </html>
