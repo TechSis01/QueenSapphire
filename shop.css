@@ -233,8 +233,8 @@ nav{
     justify-content: space-between;
     width:15%;
     padding:1% 1%;
-    border:2px solid rgb(112, 103, 103);
-    box-shadow:2px 2px 2px grey;
+    border:1px solid rgb(112, 103, 103);
+    box-shadow:2px 1px 1px grey;
     font-weight: bold;
 }
 .minus,.qty,.plus{
