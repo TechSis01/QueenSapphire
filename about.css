@@ -28,7 +28,7 @@ nav{
     align-items: center;
     background-color: #fafafa;
     position:absolute;
-    padding:5% 0;
+    padding:1% 0;
 }
 .nav-links{
     display: flex;
@@ -80,7 +80,7 @@ h1{
     text-align: center;
     padding-bottom:5%;
     font-size:6.0rem;
-    margin-top:10%;
+  
 }
 .About-container{
     display:flex;

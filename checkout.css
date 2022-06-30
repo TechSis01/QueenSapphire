@@ -28,7 +28,7 @@ nav{
     align-items: center;
     background-color: #fafafa;
     position:absolute;
-    padding:5% 0;
+    padding:1% 0;
 }
 .nav-links{
     display: flex;
@@ -68,7 +68,6 @@ h1{
     padding-top:5%;
     text-align: center;
     padding-bottom:5%;
-    margin-top:5%;
 }
 #billing-details{
     padding-left:10%;
@@ -368,6 +367,16 @@ option{
         padding-top:10%;
         font-size:1.3rem;
         font-family: 'Noto Sans', sans-serif;
+        flex-wrap:wrap;
+    }
+    .form-1{
+        width:100%;
+    }
+    .form-2{
+        width:100%;
+    }
+    .general-input{
+        width:70%;
     }
     #place-order{
         margin-top:5%;
@@ -502,6 +511,9 @@ option{
         font-size:1.4rem;
         width:100%;
         padding-bottom:15%;
+    }
+    .general-input{
+        width:70%;
     }
     #billing-details{
         padding-top:10%;
@@ -640,6 +652,9 @@ option{
         font-size:1.4rem;
         width:100%;
         padding-bottom:15%;
+    }
+    .general-input{
+        width:70%;
     }
     #billing-details{
         padding-top:10%;
