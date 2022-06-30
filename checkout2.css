@@ -130,7 +130,15 @@ option{
 #place-order:hover{
     background-color: #e6b8a2;
 }
-
+#checkbox{
+    margin-left:5%;
+}
+.check{
+    margin-left:1%;
+    font-size:1.4rem;
+    width:100%;
+    padding-bottom:15%;
+}
 /*===================MODAL CONTAINER==================*/
 .modal-container{
     top:0;
@@ -361,7 +369,7 @@ option{
         margin-left:5%;
     }
     .check{
-        margin-left:5%;
+        margin-left:1%;
         font-size:1.4rem;
         width:100%;
         padding-bottom:15%;
