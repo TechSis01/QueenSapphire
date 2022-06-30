@@ -764,3 +764,12 @@ option{
         margin-left:0 auto;
     }
 }
+
+.come{
+    transform : translateY(0%);
+    transition:transform 0.5s ease-in;
+}
+.image{
+    transform : translateY(80%);
+    transition:transform 0.5s ease-in;
+}

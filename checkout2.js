@@ -1,3 +1,12 @@
+let burgerBtn = document.querySelector('.burger')
+let navigationLinks = document.querySelector('.nav-links')
+let heroSection = document.querySelector('main')
+
+burgerBtn.addEventListener('click',function(){
+    navigationLinks.classList.toggle('come')
+    heroSection.classList.toggle('image')
+})
+
 let trackingNum = Math.floor(Math.random()*60000)+1
 let newModalContent = document.querySelector('.new-modal-content')
 const placeOrderBtn = document.querySelector('#place-order')
