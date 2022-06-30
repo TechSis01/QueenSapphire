@@ -273,7 +273,7 @@ nav{
     top:50px;
     transition:all 0.5s linear;
     /*transform:translateX(1370px);*/
-    transition:transform 0.5s ease-in;
+    transition:transform 0.5s ease-out;
     background-color: #582f0e;
     color:white;
     padding:2% 4%;
