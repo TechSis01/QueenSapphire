@@ -25,7 +25,7 @@ const products = [
         title:"Earring",
         price:130,
         Description:'18karate diamond Earrings',
-        imagesrc:'./Images/earring9.png',
+        imagesrc:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZRc5QSHCvbYjP6skPGvubo85AVQU2YGu0Lw&usqp=CAU',
     },
     {
         id:4,
