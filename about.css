@@ -28,7 +28,7 @@ nav{
     align-items: center;
     background-color: #fafafa;
     position:absolute;
-    padding:1% 0;
+    padding:5% 0;
 }
 .nav-links{
     display: flex;
@@ -50,14 +50,16 @@ nav{
 .brand_name h4{
      width:200px;
      letter-spacing: 2px;
+     margin-left:5%;
 }
 .burger{
     display:none;
+    margin-right:3%;
 }
 .burger div{
     width:25px;
     height:2px;
-    background-color: black;
+    background-color: #582f0e;
     margin:3px;
 }
 .cart-link{
@@ -78,6 +80,7 @@ h1{
     text-align: center;
     padding-bottom:5%;
     font-size:6.0rem;
+    margin-top:10%;
 }
 .About-container{
     display:flex;

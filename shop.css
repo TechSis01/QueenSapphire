@@ -28,7 +28,7 @@ nav{
     align-items: center;
     background-color: #fafafa;
     position:absolute;
-    padding:1% 0;
+    padding:5% 0;
 }
 .nav-links{
     display: flex;
@@ -53,11 +53,12 @@ nav{
 }
 .burger{
     display:none;
+    margin-right:3%;
 }
 .burger div{
     width:25px;
     height:2px;
-    background-color: black;
+    background-color:#582f0e;
     margin:3px;
 }
 .cart-link{
