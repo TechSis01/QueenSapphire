@@ -314,7 +314,7 @@ option{
        width:100%;
         justify-content: space-between;
         z-index: 1;
-        height:
+        
     }
     .nav-links{
         position:absolute;
@@ -451,7 +451,7 @@ option{
        width:100%;
         justify-content: space-between;
         z-index: 1;
-        height:
+      
     }
     .nav-links{
         position:absolute;
@@ -587,7 +587,7 @@ option{
        width:100%;
         justify-content: space-between;
         z-index: 1;
-        height:
+  
     }
     .nav-links{
         position:absolute;
@@ -712,4 +712,13 @@ option{
     .foot p{
         line-height:2;
     }
+}
+
+.come{
+    transform : translateY(0%);
+    transition:transform 0.5s ease-in;
+}
+.image{
+    transform : translateY(20%);
+    transition:transform 0.5s ease-in;
 }

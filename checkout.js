@@ -1,3 +1,12 @@
+let burgerBtn = document.querySelector('.burger')
+let navigationLinks = document.querySelector('.nav-links')
+let heroSection = document.querySelector('main')
+
+burgerBtn.addEventListener('click',function(){
+    navigationLinks.classList.toggle('come')
+    heroSection.classList.toggle('image')
+})
+
 const placeOrderBtn = document.querySelector('#place-order')
 const modalContainer = document.querySelector('.modal-container')
 const closeModalBtn = document.querySelector('#x')
